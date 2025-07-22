@@ -12,19 +12,20 @@ git clone https://github.com/Shtorkaa/testTask.git
 
 cd repo
 
-
 Установить зависимости:
 
 composer install
 
 php artisan key:generate
 
-php artisan migrate --seed
+php artisan migrate
 
 Запуск сервера
 
 php artisan serve
 
-php artisan optimize:clear
-
 composer dump-autoload
+
+Сборка docker
+
+docker-compose up -d --build
